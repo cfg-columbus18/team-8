@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         kb = new GrowthDatabase(this.getFilesDir());
         TextView welcome = findViewById(R.id.welcome_message);
-        String name = welcome.getText() + " ";// + kb.getUserName() + "!";
+        String name = welcome.getText() + " " + kb.getUserName() + "!";
         welcome.setText(name);
         findViewById(R.id.crisis).setOnClickListener(new View.OnClickListener(){
             @Override
@@ -54,12 +54,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startNotifications(View view) {
-//        startActivity(new Intent(this, NotificationSettings.class));
+        startActivity(new Intent(this, Relaxation.class));
     }
-
-    // public void callCrisis(View view) {
-    //    startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:6147178257")));//4402608595
-    // }
 
     public void getRating(View view) {
         int id = view.getId();
