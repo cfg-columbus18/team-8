@@ -164,7 +164,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="69dp"
+                android:layout_height="46dp"
                 android:fontFamily="@font/lato_bold"
                 android:text="Taking a 30 minute walk a day is like the proverbial apple  -  there's a good chance it will keep the doctor away"
                 android:textColor="@android:color/black"
@@ -186,7 +186,7 @@
             android:fontFamily="@font/lato_bold"
             android:text="Walk 2 times a week"
             android:textColor="@android:color/black"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -203,7 +203,7 @@
             android:fontFamily="@font/lato_bold"
             android:text="Meditation each day for a week"
             android:textColor="@android:color/black"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
         <ProgressBar
             android:id="@+id/progressBar3"
