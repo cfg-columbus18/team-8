@@ -7,6 +7,7 @@
     android:background="#ffffff"
     android:orientation="vertical"
     android:weightSum="1"
+    android:focusable="true"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -23,7 +24,8 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_alignParentLeft="true"
-                android:background="@drawable/phone" />
+                android:background="@drawable/phone"
+                android:contentDescription="Do you need to talk to someone? Click here."/>
 
             <Button
                 android:layout_width="40dp"

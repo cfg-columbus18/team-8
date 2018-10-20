@@ -41,7 +41,7 @@ public class RelaxationDetails extends AppCompatActivity {
         }
 
         if (mostUsed.equals("Taking a 30-minute walk a day is kind of like that proverbial apple: There's a good chance it'll keep the doctor away")) {
-            imageView.setImageResource(R.mipmap.walking);
+            imageView.setImageResource(R.mipmap.walkin);
         }
 
         if (mostUsed.equals("Yoga is known for its ability to ease stress and promote relaxation.")) {
@@ -53,7 +53,7 @@ public class RelaxationDetails extends AppCompatActivity {
         }
 
         if (mostUsed.equals("Participating in a regular stretching program not only helps increase your flexibility, but it can also calm your mind")) {
-            imageView.setImageResource(R.mipmap.stretch);
+            imageView.setImageResource(R.mipmap.stretchingg);
         }
 
         if (mostUsed.equals("“Keeping a personal journal a daily in-depth analysis and evaluation of your experiences is a high-leverage activity that increases self-awareness and enhances all the endowments and the synergy among them.” — Stephen R.Covey")) {
