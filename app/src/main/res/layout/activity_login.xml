@@ -4,20 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/GrowthExpertsToFollow">
 
-    <View
-        android:id="@+id/growthexper"
-        android:layout_width="3888dp"
-        android:layout_height="1609dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="-1844dp"
-        android:layout_marginTop="-625dp"
-        android:background="@drawable/ic_action_name" />
+
 </LinearLayout>
-
-
-    <!-- drawable/growthexper.xml -->
 
 
