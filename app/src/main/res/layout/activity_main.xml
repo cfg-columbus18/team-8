@@ -13,6 +13,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/welcome_message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -50,7 +51,7 @@
                 android:id="@+id/r1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight=".25"
+                android:layout_weight=".2"
                 android:gravity="center"
                 android:onClick="getRating"
                 android:text="😖" />
@@ -59,7 +60,7 @@
                 android:id="@+id/r2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight=".25"
+                android:layout_weight=".2"
                 android:gravity="center"
                 android:onClick="getRating"
                 android:text="😞" />
@@ -68,7 +69,7 @@
                 android:id="@+id/r3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight=".25"
+                android:layout_weight=".2"
                 android:gravity="center"
                 android:onClick="getRating"
                 android:text="😔" />
@@ -77,7 +78,7 @@
                 android:id="@+id/r4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight=".25"
+                android:layout_weight=".2"
                 android:gravity="center"
                 android:onClick="getRating"
                 android:text="😊" />
@@ -86,7 +87,7 @@
                 android:id="@+id/r5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight=".25"
+                android:layout_weight=".2"
                 android:gravity="center"
                 android:onClick="getRating"
                 android:text="😁" />
@@ -94,31 +95,40 @@
 
     </LinearLayout>
 
-    <android.support.design.widget.TabLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:weightSum="1">
 
-        <android.support.design.widget.TabItem
+        <Button
+            android:id="@+id/contacts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight=".25"
             android:onClick="startContacts"
             android:text="Contacts" />
 
-        <android.support.design.widget.TabItem
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Activities and Relax" />
+            android:layout_weight=".25"
+            android:onClick="startActivities"
+            android:text="Activities" />
 
-        <android.support.design.widget.TabItem
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:onClick="startGoals"
             android:text="Goals" />
 
-        <android.support.design.widget.TabItem
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:onClick="startGrowth"
             android:text="Growth" />
-    </android.support.design.widget.TabLayout>
+    </LinearLayout>
 
 </RelativeLayout>

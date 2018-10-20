@@ -31,7 +31,7 @@
             android:name=".ViewContactActivity"
             android:label="View Contacts" />
         <activity android:name=".ContactsActivity" />
-        <activity android:name=".notifications_page"></activity>
+        <activity android:name=".notifications_page" />
     </application>
 
 </manifest>

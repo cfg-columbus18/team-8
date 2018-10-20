@@ -5,22 +5,24 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-// import android.support.v7.app.ActionBarActivity;
-// import android.view.Menu;
+import android.widget.TextView;
+
 public class MainActivity extends AppCompatActivity {
 
-    // public static GrowthDatabase kb = new GrowthDatabase("GrowthKB.save");
-   //  ActionBar actionbar = getActionBar();
-   //  actionBar.hide();
+    public GrowthDatabase kb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        kb = new GrowthDatabase(this.getFilesDir());
+        TextView welcome = findViewById(R.id.welcome_message);
+        String name = welcome.getText() + " ";// + kb.getUserName() + "!";
+        welcome.setText(name);
     }
 
     public void startContacts(View view) {
-        startActivity(new Intent(this, MyContacts.class));
+        startActivity(new Intent(this, ContactsActivity.class));
     }
 
     public void startActivities(View view) {
@@ -50,5 +52,11 @@ public class MainActivity extends AppCompatActivity {
             case 5:
                 break;
         }
+    }
+
+    public void startGoals(View view) {
+    }
+
+    public void startGrowth(View view) {
     }
 }
