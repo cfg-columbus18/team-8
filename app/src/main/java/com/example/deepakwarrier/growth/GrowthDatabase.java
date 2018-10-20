@@ -138,5 +138,22 @@ public class GrowthDatabase {
             Log.d("DB", "JSONException");
             e.printStackTrace();
         }
+
+        save();
+    }
+
+    public String getUserName(){
+        Log.d("DB", "Getting UserName");
+
+        try {
+            String name = jsonObject.getString("name");
+
+            return name;
+        } catch (JSONException e) {
+            Log.d("DB", "JSONException");
+            e.printStackTrace();
+        }
+
+        return null;
     }
 }

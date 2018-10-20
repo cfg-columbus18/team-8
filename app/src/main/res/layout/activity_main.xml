@@ -18,32 +18,36 @@
             android:background="@drawable/phone"
             />
         <TextView
+            android:id="@+id/welcome_message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
             android:gravity="center"
-            android:text="@string/welcome_back" />
+            android:text="Welcome Back!"
+            android:textSize="24sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
             android:gravity="center"
-            android:text="@string/here_s_your_progress" />
+            android:text="Your garden grows..."
+            android:textSize="14sp" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="118dp"
             android:layout_weight=".4"
-            android:src="@drawable/sunflower" />
+            android:src="@drawable/sprout" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This week:" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="How are you feeling?" />
+            android:fontFamily="@font/lato_bold"
+            android:text="
+            How are you feeling?"
+            android:textAlignment="center"
+            android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,7 +59,7 @@
                 android:id="@+id/r1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight=".25"
+                android:layout_weight=".2"
                 android:gravity="center"
                 android:onClick="getRating"
                 android:text="😖" />
@@ -64,7 +68,7 @@
                 android:id="@+id/r2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight=".25"
+                android:layout_weight=".2"
                 android:gravity="center"
                 android:onClick="getRating"
                 android:text="😞" />
@@ -73,7 +77,7 @@
                 android:id="@+id/r3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight=".25"
+                android:layout_weight=".2"
                 android:gravity="center"
                 android:onClick="getRating"
                 android:text="😔" />
@@ -82,7 +86,7 @@
                 android:id="@+id/r4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight=".25"
+                android:layout_weight=".2"
                 android:gravity="center"
                 android:onClick="getRating"
                 android:text="😊" />
@@ -91,39 +95,82 @@
                 android:id="@+id/r5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight=".25"
+                android:layout_weight=".2"
                 android:gravity="center"
                 android:onClick="getRating"
                 android:text="😁" />
         </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="This week:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Walk 2 times a week" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="50" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Daily meditation for a week" />
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="25" />
+
     </LinearLayout>
 
-    <android.support.design.widget.TabLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:weightSum="1">
 
-        <android.support.design.widget.TabItem
+        <Button
+            android:id="@+id/contacts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight=".25"
             android:onClick="startContacts"
             android:text="Contacts" />
 
-        <android.support.design.widget.TabItem
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Activities and Relax" />
+            android:layout_weight=".25"
+            android:onClick="startActivities"
+            android:text="Activities" />
 
-        <android.support.design.widget.TabItem
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:onClick="startGoals"
             android:text="Goals" />
 
-        <android.support.design.widget.TabItem
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:onClick="startGrowth"
             android:text="Growth" />
-    </android.support.design.widget.TabLayout>
+    </LinearLayout>
 
 </RelativeLayout>
