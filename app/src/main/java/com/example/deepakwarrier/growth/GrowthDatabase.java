@@ -15,15 +15,13 @@ import java.io.IOException;
 
 public class GrowthDatabase {
 
-    private String saveFilePath;
     private File saveFile;
 
     private JSONObject jsonObject;
 
     // constructor
-    public GrowthDatabase(String filepath){
-        saveFilePath = filepath;
-        saveFile = new File(saveFilePath);
+    public GrowthDatabase(File internalFile){
+        saveFile = internalFile;
 
         load();
     }
@@ -76,7 +74,6 @@ public class GrowthDatabase {
 
         }else{ // otherwise, create a default save
             createDefaultStartState();
-            save();
         }
     }
 
@@ -117,11 +114,6 @@ public class GrowthDatabase {
         save();
     }
 
-    // returns safeFilePath
-    public String getSaveFilePath(){
-        return saveFilePath;
-    }
-
     // returns current state of forest growth
     public int getCurrentForestGrowth(){
         Log.d("DB", "Getting forest growth");
@@ -135,5 +127,16 @@ public class GrowthDatabase {
         }
 
         return result;
+    }
+
+    public void setUserName(String name){
+        Log.d("DB", "Setting UserName");
+
+        try {
+            jsonObject.put("name", name);
+        } catch (JSONException e) {
+            Log.d("DB", "JSONException");
+            e.printStackTrace();
+        }
     }
 }
