@@ -57,14 +57,6 @@
             android:layout_weight=".4"
             android:src="@drawable/trees" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato_bold"
-            android:text="\nHow are you feeling?"
-            android:textAlignment="center"
-            android:textSize="14sp" />
-
         <!--<LinearLayout-->
         <!--android:id="@+id/emoji_rating"-->
         <!--android:layout_width="match_parent"-->
@@ -122,6 +114,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
+            android:paddingTop="5sp"
             android:text="Suggested Activities"
             android:textSize="18sp" />
 
