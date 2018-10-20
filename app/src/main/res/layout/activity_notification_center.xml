@@ -1,56 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="1"
-    tools:context=".notifications_page">
+    tools:context=".notification_center">
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_bold"
-        android:text="Activities"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <TextView
+           android:id="@+id/textView7"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/lato_bold"
+           android:text="Activities"
+           android:textAlignment="center"
+           android:textSize="24sp" />
 
-    <Switch
-        android:id="@+id/switch2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_bold"
-        android:text="Allow Notifications" />
+       <Switch
+           android:id="@+id/switch2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/lato_bold"
+           android:text="Allow Notifications" />
 
-    <Switch
-        android:id="@+id/switch3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_bold"
-        android:text="Sounds" />
+       <Switch
+           android:id="@+id/switch3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/lato_bold"
+           android:text="Sounds" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_bold"
-        android:text="Inspirational Messages"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+       <TextView
+           android:id="@+id/textView7"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/lato_bold"
+           android:text="Inspirational Messages"
+           android:textAlignment="center"
+           android:textSize="24sp" />
 
-    <Switch
-        android:id="@+id/switch2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_bold"
-        android:text="Allow Notifications" />
+       <Switch
+           android:id="@+id/switch2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/lato_bold"
+           android:text="Allow Notifications" />
 
-    <Switch
-        android:id="@+id/switch3"
-        android:layout_width="match_parent"
+       <Switch
+           android:id="@+id/switch3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/lato_bold"
+           android:text="Sounds" />
+   </LinearLayout>
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_bold"
-        android:text="Sounds" />
-</LinearLayout>
+        android:layout_weight=".25"
+        android:onClick="startContacts"
+        android:text="Contacts" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25"
+        android:onClick="startActivities"
+        android:text="Activities" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25"
+        android:onClick="startGoals"
+        android:text="Goals" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25"
+        android:onClick="startGrowth"
+        android:text="Growth" />
+    </LinearLayout>
+</RelativeLayout>
