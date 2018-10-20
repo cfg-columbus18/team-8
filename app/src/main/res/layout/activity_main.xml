@@ -119,7 +119,7 @@
             android:paddingTop="5sp"
             android:text="Suggested Activities"
             android:textColor="@android:color/black"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
         <LinearLayout
             android:id="@+id/entry1"
@@ -135,7 +135,7 @@
                 android:fontFamily="@font/lato_bold"
                 android:text="Reading"
                 android:textColor="@android:color/black"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -143,7 +143,7 @@
                 android:fontFamily="@font/lato_bold"
                 android:text="Reading improves your comprehensive abilities - a skill useful in any experience or job"
                 android:textColor="@android:color/black"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -159,15 +159,16 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/lato_bold"
                 android:text="Taking Walks"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="69dp"
                 android:fontFamily="@font/lato_bold"
                 android:text="Taking a 30 minute walk a day is like the proverbial apple  -  there's a good chance it will keep the doctor away"
                 android:textColor="@android:color/black"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
         </LinearLayout>
 
 
@@ -177,14 +178,15 @@
             android:fontFamily="@font/lato_bold"
             android:text="Your Progress"
             android:textColor="@android:color/black"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
             android:text="Walk 2 times a week"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -200,7 +202,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
             android:text="Meditation each day for a week"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
 
         <ProgressBar
             android:id="@+id/progressBar3"
