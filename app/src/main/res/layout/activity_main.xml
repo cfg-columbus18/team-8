@@ -1,121 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="1"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/welcome_back" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/here_s_your_progress" />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1">
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight=".5"
+            android:gravity="center"
+            android:text="@string/welcome_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/here_s_your_progress" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            android:layout_weight=".4"
+            android:src="@drawable/sunflower" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="This week:" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:text="" />
+            android:text="How are you feeling?" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:onClick="getRating"
+                android:text="😖" />
+
+            <TextView
+                android:id="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:onClick="getRating"
+                android:text="😞" />
+
+            <TextView
+                android:id="@+id/r3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:onClick="getRating"
+                android:text="😔" />
+
+            <TextView
+                android:id="@+id/r4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:onClick="getRating"
+                android:text="😊" />
+
+            <TextView
+                android:id="@+id/r5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:onClick="getRating"
+                android:text="😁" />
+        </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
+    <android.support.design.widget.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:onClick="startContacts">
+        android:layout_alignParentBottom="true">
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_launcher_foreground" />
-
-        <TextView
+        <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight=".5"
+            android:onClick="startContacts"
             android:text="Contacts" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:onClick="startActivities">
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_launcher_foreground" />
-
-        <TextView
+        <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:text="Activities and Relaxations" />
+            android:text="Activities and Relax" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:onClick="startNotifications">
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_launcher_foreground" />
-
-        <TextView
+        <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:text="Notification Center" />
+            android:text="Goals" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:onClick="callCrisis">
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_launcher_foreground" />
-
-        <TextView
+        <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:onClick="callCrisis"
-            android:text="Crisis Hotline" />
+            android:text="Growth" />
+    </android.support.design.widget.TabLayout>
 
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
