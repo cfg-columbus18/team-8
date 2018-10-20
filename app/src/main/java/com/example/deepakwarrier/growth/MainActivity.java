@@ -5,10 +5,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-
+// import android.support.v7.app.ActionBarActivity;
+// import android.view.Menu;
 public class MainActivity extends AppCompatActivity {
 
-    public static GrowthDatabase kb = new GrowthDatabase("GrowthKB.save");
+    // public static GrowthDatabase kb = new GrowthDatabase("GrowthKB.save");
+   //  ActionBar actionbar = getActionBar();
+   //  actionBar.hide();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

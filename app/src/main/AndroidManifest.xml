@@ -19,23 +19,19 @@
         <activity android:name=".MainActivity" />
         <activity
             android:name=".WelcomeActivity"
-            android:label="Welcome">
+            android:label=""
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <!--  -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".Relaxation"/>
         <activity
-            android:name=".RelaxationDetails"
-            android:label="@string/title_activity_relaxation_details"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".RelaxationDetail"
-            android:label="@string/title_activity_relaxation_detail"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+            android:name=".ViewContactActivity"
+            android:label="View Contacts" />
+        <activity android:name=".ContactsActivity" />
+        <activity android:name=".notifications_page"></activity>
     </application>
 
 </manifest>
