@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startNotifications(View view) {
-        startActivity(new Intent(this, notification_center.class));
+        startActivity(new Intent(this, NotificationCenter.class));
     }
 
     public void getRating(View view) {
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startGoals(View view) {
-        startActivity(new Intent(this, goals.class));
+        startActivity(new Intent(this, Goals.class));
     }
 
     public void startGrowth(View view) {

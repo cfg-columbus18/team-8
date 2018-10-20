@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
             android:gravity="center"
-            android:text="Your garden grows...\n"
+            android:text="Your forest grows...\n"
             android:textColor="@android:color/black"
             android:textSize="14sp" />
 

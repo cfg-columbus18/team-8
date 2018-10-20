@@ -31,9 +31,9 @@
             android:name=".ViewContactActivity"
             android:label="View Contacts" />
         <activity android:name=".ContactsActivity" />
-        <activity android:name=".notification_center" />
-        <activity android:name=".goals" />
-        <activity android:name=".addnewgoal" />
+        <activity android:name=".NotificationCenter" />
+        <activity android:name=".Goals" />
+        <activity android:name=".AddNewGoal" />
         <activity android:name=".RelaxationDetails" />
         <activity android:name=".Relaxation" />
     </application>

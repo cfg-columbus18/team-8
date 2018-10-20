@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:focusable="true"
     android:weightSum="1"
-    tools:context=".notification_center">
+    tools:context=".NotificationCenter">
 
     <TextView
         android:id="@+id/textView7"
