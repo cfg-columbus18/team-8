@@ -32,6 +32,8 @@
             android:label="View Contacts"/>
         <activity android:name=".ContactsActivity" />
         <activity android:name=".notification_center" />
+        <activity android:name=".goals" />
+        <activity android:name=".addnewgoal"></activity>
     </application>
 
 </manifest>
