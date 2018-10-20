@@ -16,4 +16,23 @@ public class goals extends AppCompatActivity {
     public void addGoals(View view) {
         startActivity(new Intent(this, addnewgoal.class));
     }
+
+    public void startContacts(View view) {
+        startActivity(new Intent(this, ContactsActivity.class));
+    }
+
+    public void startActivities(View view) {
+        startActivity(new Intent(this, Relaxation.class));
+    }
+
+    public void startNotifications(View view) {
+        startActivity(new Intent(this, notification_center.class));
+    }
+
+    public void startGoals(View view) {
+        startActivity(new Intent(this, goals.class));
+    }
+
+    public void startGrowth(View view) {
+    }
 }
