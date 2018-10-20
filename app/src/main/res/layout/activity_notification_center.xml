@@ -8,6 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:focusable="true"
     android:weightSum="1"
     tools:context=".notification_center">
 
@@ -79,6 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_weight=".25"
         android:onClick="startContacts"
+        android:contentDescription="Need to find your support system? Click here."
         android:text="Contacts" />
 
     <Button
