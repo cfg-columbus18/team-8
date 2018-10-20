@@ -135,8 +135,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:weightSum="1"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="500dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/contacts"
