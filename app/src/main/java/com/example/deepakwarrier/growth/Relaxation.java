@@ -18,19 +18,18 @@ public class Relaxation extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
-        final String[] most_used = {"Jumping", "Skipping", "Running"};
-        final String[] most_used_summary = {"JUMPING SUMMARY", "SKIPPING SUMMARY", "RUNNING SUMMARY"};
-        final String[] least_used = {"Sleeping", "Napping", "Resting", "Eating", "Frolicking"};
-        final String[] least_used_summary = {"SLEEPING SUMMARY", "NAPPING SUMMARY", "RESTING SUMMARY", "EATING SUMMARY", "FROLICKING SUMMARY"};
+
+        final String[] most_used = {"Reading", "Calling Grandma", "Taking Walks"};
+        final String[] most_used_summary = {"Reading improves your ability to comprehend written material—a skill helpful in any career.",
+                "If you are going through a tough time, talking to someone might sound simplistic but it really is one of the best possible things you can do.",
+                "Taking a 30-minute walk a day is kind of like that proverbial apple: There's a good chance it'll keep the doctor away"};
+        final String[] least_used = {"Yoga", "Breathing Exercises", "Stretching", "Keeping A Journal", "Do Someone Else a Favor"};
+        final String[] least_used_summary = {"Yoga is known for its ability to ease stress and promote relaxation.",
+                "Breathing exercises are a good way to relax, reduce tension, and relieve stress.",
+                "Participating in a regular stretching program not only helps increase your flexibility, but it can also calm your mind",
+                "“Keeping a personal journal a daily in-depth analysis and evaluation of your experiences is a high-leverage activity that increases self-awareness and enhances all the endowments and the synergy among them.” — Stephen R.Covey",
+                "You can improve the quality of other people's lives, and in the process of doing so you can benefit yourself as well."};
 
         Button most_used_button1 = (Button) findViewById(R.id.mostused1);
         most_used_button1.setText(most_used[0]);
