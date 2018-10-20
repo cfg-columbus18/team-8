@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
             android:gravity="center"
-            android:text="Your garden grows..."
+            android:text="Your garden grows...\n"
             android:textSize="14sp" />
 
         <ImageView
@@ -65,15 +65,6 @@
                 android:text="😖" />
 
             <TextView
-                android:id="@+id/r2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight=".2"
-                android:gravity="center"
-                android:onClick="getRating"
-                android:text="😞" />
-
-            <TextView
                 android:id="@+id/r3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -81,6 +72,15 @@
                 android:gravity="center"
                 android:onClick="getRating"
                 android:text="😔" />
+
+            <TextView
+                android:id="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:onClick="getRating"
+                android:text="😞" />
 
             <TextView
                 android:id="@+id/r4"
