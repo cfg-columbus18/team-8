@@ -11,13 +11,16 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="16dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="17dp"
-        android:fontFamily="@font/lato"
-        android:text="Most used activities:"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Great job keeping up with your activities!"
         android:textColor="@android:color/black"
-        android:textSize="14sp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,7 +29,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/lato_bold"
         android:text="You might want to try:"
         android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,10 +41,9 @@
         android:layout_width="372dp"
         android:layout_height="49dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -52,7 +55,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mostused2" />
 
@@ -73,7 +76,7 @@
         android:layout_width="372dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -85,6 +88,7 @@
         android:layout_width="372dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.521"
@@ -96,7 +100,7 @@
         android:layout_width="372dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.521"
@@ -108,7 +112,7 @@
         android:layout_width="372dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,7 +123,7 @@
         android:layout_width="372dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
@@ -147,7 +151,8 @@
             android:layout_height="wrap_content"
             android:layout_weight=".25"
             android:onClick="startActivities"
-            android:text="Activities" />
+            android:text="Activities"
+            android:textAlignment="center" />
 
         <Button
             android:layout_width="wrap_content"
