@@ -23,6 +23,8 @@ public class GrowthDatabase {
     public GrowthDatabase(File internalFile){
         saveFile = internalFile;
 
+        Log.d("DB", saveFile.getAbsolutePath());
+
         load();
     }
 
@@ -64,8 +66,6 @@ public class GrowthDatabase {
                 Log.d("DB", "Building JSON...");
                 // build a JSON object
                 jsonObject = new JSONObject(allText);
-                if (!jsonObject.getString("status").equals("OK"))
-                    return;
 
             } catch (JSONException e) {
                 Log.d("DB", "JSONException");
