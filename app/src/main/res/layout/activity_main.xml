@@ -26,7 +26,7 @@
 
             <Button
                 android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_height="0dp"
                 android:layout_alignParentRight="true"
                 android:background="@drawable/baseline_settings_black_18dp"
                 android:onClick="startNotifications" />
@@ -124,12 +124,37 @@
             android:text="Suggested Activities"
             android:textSize="18sp" />
 
-        <LinearLayout
-            android:id="@+id/suggested_list"
-            android:layout_width="wrap_content"
+        <ScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/suggested_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reading"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Reading improves your ability to comprehend written \n  material—a skill helpful in any career."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Taking Walks"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Taking a 30-minute walk a day is kind of like that proverbial \n  apple: There's a good chance it'll keep the doctor away"/>
+            </LinearLayout>
+
+        </ScrollView>
+
 
         <TextView
             android:layout_width="match_parent"
@@ -199,8 +224,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight=".25"
-            android:onClick="startGrowth"
-            android:text="Growth" />
+            android:onClick="startNotifications"
+            android:text="Settings" />
     </LinearLayout>
 
 </RelativeLayout>

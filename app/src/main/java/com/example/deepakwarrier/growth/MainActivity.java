@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startGoals(View view) {
+        startActivity(new Intent(this, goals.class));
     }
 
     public void startGrowth(View view) {
