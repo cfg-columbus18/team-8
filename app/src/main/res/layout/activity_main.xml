@@ -4,7 +4,7 @@
     android:id="@+id/welcome_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#a36e23"
+    android:background="#ffffff"
     android:orientation="vertical"
     android:weightSum="1"
     tools:context=".MainActivity">
@@ -39,7 +39,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
             android:gravity="center"
-            android:text="Welcome Back!"
+            android:text="Welcome back, "
+            android:textColor="@android:color/black"
             android:textSize="24sp" />
 
         <TextView
@@ -48,6 +49,7 @@
             android:fontFamily="@font/lato_bold"
             android:gravity="center"
             android:text="Your garden grows...\n"
+            android:textColor="@android:color/black"
             android:textSize="14sp" />
 
         <ImageView
@@ -116,6 +118,7 @@
             android:fontFamily="@font/lato_bold"
             android:paddingTop="5sp"
             android:text="Suggested Activities"
+            android:textColor="@android:color/black"
             android:textSize="18sp" />
 
         <LinearLayout
@@ -129,12 +132,18 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Reading" />
+                android:fontFamily="@font/lato_bold"
+                android:text="Reading"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="- Reading improves your ability to comprehend written \n  material—a skill helpful in any career." />
+                android:fontFamily="@font/lato_bold"
+                android:text="Reading improves your comprehensive abilities - a skill useful in any experience or job"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -148,12 +157,17 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Taking Walks" />
+                android:fontFamily="@font/lato_bold"
+                android:text="Taking Walks"
+                android:textColor="@android:color/black" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="- Taking a 30-minute walk a day is kind of like that proverbial \n  apple: There's a good chance it'll keep the doctor away" />
+                android:fontFamily="@font/lato_bold"
+                android:text="Taking a 30 minute walk a day is like the proverbial apple  -  there's a good chance it will keep the doctor away"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
         </LinearLayout>
 
 
@@ -162,12 +176,15 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
             android:text="Your Progress"
+            android:textColor="@android:color/black"
             android:textSize="18sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="- Walk 2 times a week" />
+            android:fontFamily="@font/lato_bold"
+            android:text="Walk 2 times a week"
+            android:textColor="@android:color/black" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -181,7 +198,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="- Daily meditation for a week" />
+            android:fontFamily="@font/lato_bold"
+            android:text="Meditation each day for a week"
+            android:textColor="@android:color/black" />
 
         <ProgressBar
             android:id="@+id/progressBar3"
