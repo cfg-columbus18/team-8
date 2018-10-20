@@ -138,6 +138,8 @@ public class GrowthDatabase {
             Log.d("DB", "JSONException");
             e.printStackTrace();
         }
+
+        save();
     }
 
     public String getUserName(){
