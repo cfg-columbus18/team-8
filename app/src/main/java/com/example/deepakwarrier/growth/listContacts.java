@@ -1,4 +1,4 @@
-package com.example.deepakwarrier.growth;
+/*package com.example.deepakwarrier.growth;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -79,4 +79,4 @@ public class SampleActivity extends AppCompatActivity {
             queryContacts();
         }
     }
-}
+}*/

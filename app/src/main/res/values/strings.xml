@@ -2,4 +2,6 @@
     <string name="app_name">Growth</string>
     <string name="welcome_back">Welcome Back!</string>
     <string name="here_s_your_progress">Here\'s your progress:</string>
+    <string name="title_activity_relaxation_details">RelaxationDetails</string>
+    <string name="title_activity_relaxation_detail">RelaxationDetail</string>
 </resources>

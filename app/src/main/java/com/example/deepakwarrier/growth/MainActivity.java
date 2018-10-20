@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startActivities(View view) {
-//        startActivity(new Intent(this, ActivitiesRelax.class));
+        startActivity(new Intent(this, Relaxation.class));
     }
 
     public void startNotifications(View view) {

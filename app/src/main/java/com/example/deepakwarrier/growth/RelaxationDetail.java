@@ -1,4 +1,4 @@
-/*package com.example.deepakwarrier.growth;
+package com.example.deepakwarrier.growth;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -7,13 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class surveyContacts extends AppCompatActivity {
+public class RelaxationDetail extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        Contacts.initialize(this);
-        setContentView(R.layout.activity_survey_contacts);
+        setContentView(R.layout.activity_relaxation_details);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -27,4 +26,4 @@ public class surveyContacts extends AppCompatActivity {
         });
     }
 
-}*/
+}
