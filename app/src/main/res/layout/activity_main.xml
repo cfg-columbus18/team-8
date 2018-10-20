@@ -21,15 +21,15 @@
                 android:id="@+id/crisis"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="@drawable/phone"
-                android:layout_alignParentLeft="true"/>
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/phone" />
 
             <Button
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="@drawable/baseline_settings_black_18dp"
                 android:layout_alignParentRight="true"
-                android:onClick="startNotifications"/>
+                android:background="@drawable/baseline_settings_black_18dp"
+                android:onClick="startNotifications" />
         </RelativeLayout>
 
         <TextView
@@ -53,8 +53,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight=".4"
-            android:src="@drawable/trees"
-            android:onClick="changeImg"/>
+            android:onClick="changeImg"
+            android:src="@drawable/trees" />
 
         <TextView
             android:layout_width="match_parent"
@@ -121,7 +121,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
-            android:text="Goal Progress"
+            android:text="Suggested Activities"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/suggested_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="Your Progress"
             android:textSize="18sp" />
 
         <TextView
@@ -136,7 +150,7 @@
             android:layout_height="wrap_content"
             android:indeterminate="false"
             android:max="100"
-            android:progress="50"/>
+            android:progress="50" />
 
         <TextView
             android:layout_width="match_parent"

@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.File;
+
 public class MainActivity extends AppCompatActivity {
 
     public GrowthDatabase kb;
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        kb = new GrowthDatabase(this.getFilesDir());
+        kb = new GrowthDatabase(new File(getFilesDir(), "GrowthKB.save"));
         TextView welcome = findViewById(R.id.welcome_message);
         String name = welcome.getText() + " " + kb.getUserName() + "!";
         welcome.setText(name);
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 dialPhone();
             }
         });
+
     }
 
     public void dialPhone() {
