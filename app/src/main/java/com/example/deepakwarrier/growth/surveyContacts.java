@@ -12,8 +12,7 @@ public class surveyContacts extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.onCreate();
-        Contacts.initialize(this);
+//        Contacts.initialize(this);
         setContentView(R.layout.activity_survey_contacts);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
