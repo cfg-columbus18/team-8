@@ -164,7 +164,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="46dp"
+                android:layout_height="47dp"
                 android:fontFamily="@font/lato_bold"
                 android:text="Taking a 30 minute walk a day is like the proverbial apple  -  there's a good chance it will keep the doctor away"
                 android:textColor="@android:color/black"
