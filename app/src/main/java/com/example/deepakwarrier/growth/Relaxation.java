@@ -130,4 +130,19 @@ public class Relaxation extends AppCompatActivity {
 
     }
 
+    public void startContacts(View view) {
+        startActivity(new Intent(this, ContactsActivity.class));
+    }
+
+    public void startActivities(View view) {
+        startActivity(new Intent(this, Relaxation.class));
+    }
+
+    public void startGoals(View view) {
+        startActivity(new Intent(this, goals.class));
+    }
+
+    public void openSettings(View view) {
+        startActivity(new Intent(this, notification_center.class));
+    }
 }
