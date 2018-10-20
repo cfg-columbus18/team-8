@@ -17,7 +17,7 @@
         android:layout_marginEnd="8dp"
         android:fontFamily="@font/lato_bold"
         android:text="Great job keeping up with your activities!"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/darker_gray"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"

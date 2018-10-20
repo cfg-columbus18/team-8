@@ -92,11 +92,11 @@
         android:onClick="startGoals"
         android:text="Goals" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight=".25"
-        android:onClick="startGrowth"
-        android:text="Growth" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:onClick="startGrowth"
+            android:text="Settings" />
     </LinearLayout>
 </RelativeLayout>
