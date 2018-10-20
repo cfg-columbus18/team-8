@@ -29,10 +29,9 @@
         </activity>
         <activity
             android:name=".ViewContactActivity"
-            android:label="View Contacts" />
+            android:label="View Contacts"/>
         <activity android:name=".ContactsActivity" />
-        <activity android:name=".notifications_page" />
-        <activity android:name=".goals"></activity>
+        <activity android:name=".notification_center" />
     </application>
 
 </manifest>

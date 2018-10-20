@@ -24,12 +24,16 @@ public class WelcomeActivity extends AppCompatActivity {
 
         int i = kb.getCurrentForestGrowth();
         Log.d("test", "Current forest growth: " + i);
+        Log.d("name", "Stored name: " + kb.getUserName());
+        if (kb.getUserName() != null) {
+            startActivity(new Intent(this, MainActivity.class));
+        }
     }
 
     public void welcomeContinueOnClick(View view) {
-        TextInputEditText nameInput = (TextInputEditText) findViewById(R.id.name_input);
+        TextInputEditText nameInput = findViewById(R.id.name_input);
+        kb.setUserName(nameInput.getText().toString());
         Intent main = new Intent(this, MainActivity.class);
-        main.putExtra("Name", nameInput.getText().toString());
         startActivity(main);
     }
 }

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#a36e23"
     android:orientation="vertical"
     android:weightSum="1"
     tools:context=".MainActivity">
@@ -11,12 +12,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <Button
-            android:id="@+id/crisis"
-            android:layout_height="40dp"
-            android:layout_width="40dp"
-            android:background="@drawable/phone"
-            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/crisis"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/phone"
+                android:layout_alignParentLeft="true"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/baseline_settings_black_18dp"
+                android:layout_alignParentRight="true"
+                android:onClick="startNotifications"/>
+        </RelativeLayout>
+
         <TextView
             android:id="@+id/welcome_message"
             android:layout_width="match_parent"
@@ -38,7 +53,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight=".4"
-            android:src="@drawable/trees" />
+            android:src="@drawable/trees"
+            android:onClick="changeImg"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -49,63 +65,63 @@
             android:textSize="14sp" />
 
         <!--<LinearLayout-->
-            <!--android:id="@+id/emoji_rating"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal"-->
-            <!--android:weightSum="1">-->
+        <!--android:id="@+id/emoji_rating"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="1">-->
 
-            <!--<TextView-->
-                <!--android:id="@+id/r1"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight=".2"-->
-                <!--android:gravity="center"-->
-                <!--android:onClick="getRating"-->
-                <!--android:text="😖" />-->
+        <!--<TextView-->
+        <!--android:id="@+id/r1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight=".2"-->
+        <!--android:gravity="center"-->
+        <!--android:onClick="getRating"-->
+        <!--android:text="😖" />-->
 
-            <!--<TextView-->
-                <!--android:id="@+id/r3"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight=".2"-->
-                <!--android:gravity="center"-->
-                <!--android:onClick="getRating"-->
-                <!--android:text="😔" />-->
+        <!--<TextView-->
+        <!--android:id="@+id/r3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight=".2"-->
+        <!--android:gravity="center"-->
+        <!--android:onClick="getRating"-->
+        <!--android:text="😔" />-->
 
-            <!--<TextView-->
-                <!--android:id="@+id/r2"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight=".2"-->
-                <!--android:gravity="center"-->
-                <!--android:onClick="getRating"-->
-                <!--android:text="😞" />-->
+        <!--<TextView-->
+        <!--android:id="@+id/r2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight=".2"-->
+        <!--android:gravity="center"-->
+        <!--android:onClick="getRating"-->
+        <!--android:text="😞" />-->
 
-            <!--<TextView-->
-                <!--android:id="@+id/r4"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight=".2"-->
-                <!--android:gravity="center"-->
-                <!--android:onClick="getRating"-->
-                <!--android:text="😊" />-->
+        <!--<TextView-->
+        <!--android:id="@+id/r4"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight=".2"-->
+        <!--android:gravity="center"-->
+        <!--android:onClick="getRating"-->
+        <!--android:text="😊" />-->
 
-            <!--<TextView-->
-                <!--android:id="@+id/r5"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight=".2"-->
-                <!--android:gravity="center"-->
-                <!--android:onClick="getRating"-->
-                <!--android:text="😁" />-->
+        <!--<TextView-->
+        <!--android:id="@+id/r5"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight=".2"-->
+        <!--android:gravity="center"-->
+        <!--android:onClick="getRating"-->
+        <!--android:text="😁" />-->
         <!--</LinearLayout>-->
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
-            android:text="@string/this_progress_for_the_week"
+            android:text="Goal Progress"
             android:textSize="18sp" />
 
         <TextView
@@ -120,7 +136,7 @@
             android:layout_height="wrap_content"
             android:indeterminate="false"
             android:max="100"
-            android:progress="50" />
+            android:progress="50"/>
 
         <TextView
             android:layout_width="match_parent"
