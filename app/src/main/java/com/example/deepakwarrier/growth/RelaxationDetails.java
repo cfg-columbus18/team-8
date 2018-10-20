@@ -1,5 +1,6 @@
 package com.example.deepakwarrier.growth;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,8 +10,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.File;
+
 public class RelaxationDetails extends AppCompatActivity {
 
+    GrowthDatabase kb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +26,8 @@ public class RelaxationDetails extends AppCompatActivity {
 
         ImageView imageView = findViewById(R.id.imageView);
 
+        kb = new GrowthDatabase(new File(getFilesDir(), "GrowthKB.save"));
+
 
        /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -32,7 +38,7 @@ public class RelaxationDetails extends AppCompatActivity {
             }
         }); */
 
-        TextView txt = (TextView)findViewById(R.id.text1);
+        TextView txt = (TextView) findViewById(R.id.text1);
         txt.setText(mostUsed);
         if (mostUsed == "Reading improves your ability to comprehend written material—a skill helpful in any career.") {
             imageView.setImageResource(R.mipmap.reading);
@@ -67,4 +73,12 @@ public class RelaxationDetails extends AppCompatActivity {
         }
     }
 
+    public void openMain(View view) {
+        startActivity(new Intent(this, MainActivity.class));
+    }
+
+    public void incrementAndOpen(View view) {
+        kb.increaseActivityPoints(1);
+        openMain(view);
+    }
 }
