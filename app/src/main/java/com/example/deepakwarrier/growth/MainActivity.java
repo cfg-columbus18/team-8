@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startContacts(View view) {
-//        startActivity(new Intent(this, SurveyContacts.class));
+        startActivity(new Intent(this, MyContacts.class));
     }
 
     public void startActivities(View view) {

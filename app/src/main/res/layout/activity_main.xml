@@ -53,7 +53,7 @@
                 android:layout_weight=".25"
                 android:gravity="center"
                 android:onClick="getRating"
-                android:text="U+1F616" />
+                android:text="😖" />
 
             <TextView
                 android:id="@+id/r2"
@@ -62,7 +62,7 @@
                 android:layout_weight=".25"
                 android:gravity="center"
                 android:onClick="getRating"
-                android:text="U+1F61E" />
+                android:text="😞" />
 
             <TextView
                 android:id="@+id/r3"
@@ -71,7 +71,7 @@
                 android:layout_weight=".25"
                 android:gravity="center"
                 android:onClick="getRating"
-                android:text="U+1F614" />
+                android:text="😔" />
 
             <TextView
                 android:id="@+id/r4"
@@ -80,7 +80,7 @@
                 android:layout_weight=".25"
                 android:gravity="center"
                 android:onClick="getRating"
-                android:text="U+1F60A" />
+                android:text="😊" />
 
             <TextView
                 android:id="@+id/r5"
@@ -89,7 +89,7 @@
                 android:layout_weight=".25"
                 android:gravity="center"
                 android:onClick="getRating"
-                android:text="U+1F601" />
+                android:text="😁" />
         </LinearLayout>
 
     </LinearLayout>
