@@ -62,8 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lato_bold"
-        android:text="Call parents more"
-        tools:text="Call parents more" />
+        android:text="Call parents more" />
 
     <TextView
         android:id="@+id/textView10"
@@ -85,8 +84,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lato_bold"
-        android:text="CheckBox"
-        tools:text="Go to the gym at least 2 days a week for a month" />
+        android:text="Go to the gym at least 2 days a week for a month" />
 
     <TextView
         android:id="@+id/textView11"
@@ -108,6 +106,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lato_bold"
-        android:text="CheckBox"
-        tools:text="Meditate for at least 10 minutes every day for month" />
+        android:text="Meditate for at least 10 minutes every day for a month" />
 </LinearLayout>
