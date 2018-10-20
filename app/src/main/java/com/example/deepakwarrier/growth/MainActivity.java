@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         kb = new GrowthDatabase(this.getFilesDir());
         TextView welcome = findViewById(R.id.welcome_message);
-        String name = welcome.getText() + " " + kb.getUserName() + "!";
+        String name = welcome.getText() + " ";// + kb.getUserName() + "!";
         welcome.setText(name);
         findViewById(R.id.crisis).setOnClickListener(new View.OnClickListener(){
             @Override
@@ -34,13 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Intent callIntent = new Intent(Intent.ACTION_DIAL);
         callIntent.setData(Uri.parse("tel:6103333244"));
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
             ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.CALL_PHONE}, 0);
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
             return;
         }
         startActivity(callIntent);
@@ -54,8 +48,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startNotifications(View view) {
-        startActivity(new Intent(this, Relaxation.class));
+//        startActivity(new Intent(this, NotificationSettings.class));
     }
+
 
     public void getRating(View view) {
         int id = view.getId();
