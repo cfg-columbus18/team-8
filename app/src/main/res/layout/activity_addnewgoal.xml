@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:fontFamily="@font/lato_bold"
-        android:text="Here is a list of suggested goals and rewards you can achieve based on your history:"
+        android:text="Here is a list of suggested goals you can achieve based on your history:"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
