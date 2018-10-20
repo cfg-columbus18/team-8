@@ -49,9 +49,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
-            android:hint="[input name here]"
-            android:selectAllOnFocus="false"
-            android:singleLine="false"
+            android:hint="Enter name here..."
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
