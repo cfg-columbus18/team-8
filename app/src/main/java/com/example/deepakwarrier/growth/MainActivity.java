@@ -32,6 +32,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        updateImage(kb.getCurrentForestGrowth());
+    }
+
+    private void updateImage(int currentForestGrowth) {
+        ImageView image = findViewById(R.id.growth);
+        if(currentForestGrowth == 1){
+            image.setImageResource(R.drawable.sprout);
+        }else if(currentForestGrowth == 2){
+            image.setImageResource(R.drawable.trees);
+        }else if(currentForestGrowth >= 3){
+            image.setImageResource(R.drawable.swing);
+        }
     }
 
     public void dialPhone() {
@@ -89,5 +101,23 @@ public class MainActivity extends AppCompatActivity {
     public void changeImg(View view) {
         ImageView grow = (ImageView) view;
         grow.setImageResource(R.drawable.sprout);
+    }
+
+    public void startActivitiesDetails(View view) {
+
+        final String[] most_used_summary = {"Reading improves your ability to comprehend written material—a skill helpful in any career.",
+                "If you are going through a tough time, talking to someone might sound simplistic but it really is one of the best possible things you can do.",
+                "Taking a 30-minute walk a day is kind of like that proverbial apple: There's a good chance it'll keep the doctor away"};
+
+        Intent intent = new Intent(this, RelaxationDetails.class);
+        switch (view.getId()) {
+            case R.id.entry1:
+                intent.putExtra("most_used_summary", most_used_summary[0]);
+                break;
+            case R.id.entry2:
+                intent.putExtra("most_used_summary", most_used_summary[2]);
+                break;
+        }
+        startActivity(intent);
     }
 }

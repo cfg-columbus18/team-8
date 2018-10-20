@@ -29,11 +29,12 @@
         </activity>
         <activity
             android:name=".ViewContactActivity"
-            android:label="View Contacts"/>
+            android:label="View Contacts" />
         <activity android:name=".ContactsActivity" />
         <activity android:name=".notification_center" />
         <activity android:name=".goals" />
-        <activity android:name=".addnewgoal"></activity>
+        <activity android:name=".addnewgoal" />
+        <activity android:name=".RelaxationDetails" />
     </application>
 
 </manifest>

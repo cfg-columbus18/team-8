@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#a36e23"
@@ -50,10 +51,10 @@
             android:textSize="14sp" />
 
         <ImageView
+            android:id="@+id/growth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight=".4"
-            android:onClick="changeImg"
             android:src="@drawable/trees" />
 
         <TextView
@@ -124,36 +125,43 @@
             android:text="Suggested Activities"
             android:textSize="18sp" />
 
-        <ScrollView
+        <LinearLayout
+            android:id="@+id/entry1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:onClick="startActivitiesDetails"
+            android:orientation="vertical"
+            android:padding="5sp">
 
-            <LinearLayout
-                android:id="@+id/suggested_list"
-                android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:text="Reading" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Reading"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="- Reading improves your ability to comprehend written \n  material—a skill helpful in any career."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Reading improves your ability to comprehend written \n  material—a skill helpful in any career." />
+        </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Taking Walks"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="- Taking a 30-minute walk a day is kind of like that proverbial \n  apple: There's a good chance it'll keep the doctor away"/>
-            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/entry2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startActivitiesDetails"
+            android:orientation="vertical"
+            android:padding="5sp">
 
-        </ScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Taking Walks" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Taking a 30-minute walk a day is kind of like that proverbial \n  apple: There's a good chance it'll keep the doctor away" />
+        </LinearLayout>
 
 
         <TextView
