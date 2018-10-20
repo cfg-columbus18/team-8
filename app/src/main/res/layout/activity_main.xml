@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="1"
     tools:context=".MainActivity">
 
     <TextView
@@ -20,101 +21,20 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="269dp"
+        android:layout_weight=".4"
+        android:src="@drawable/sunflower" />
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1">
+        android:text="This week:"
+        android:layout_weight=".2"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:text="This week:" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:text="" />
-
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:onClick="startContacts">
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_launcher_foreground" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:text="Contacts" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:onClick="startActivities">
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_launcher_foreground" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:text="Activities and Relaxations" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:onClick="startNotifications">
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_launcher_foreground" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:text="Notification Center" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:onClick="callCrisis">
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_launcher_foreground" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:text="Crisis Hotline" />
-
-    </LinearLayout>
+        android:text="This month:"
+        android:layout_weight=".2"/>
 
 </LinearLayout>
