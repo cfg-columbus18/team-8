@@ -15,7 +15,7 @@ public class Relaxation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_relaxation);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
 
@@ -31,7 +31,7 @@ public class Relaxation extends AppCompatActivity {
                 "“Keeping a personal journal a daily in-depth analysis and evaluation of your experiences is a high-leverage activity that increases self-awareness and enhances all the endowments and the synergy among them.” — Stephen R.Covey",
                 "You can improve the quality of other people's lives, and in the process of doing so you can benefit yourself as well."};
 
-        Button most_used_button1 = (Button) findViewById(R.id.mostused1);
+        Button most_used_button1 = findViewById(R.id.mostused1);
         most_used_button1.setText(most_used[0]);
 
         most_used_button1.setOnClickListener(new View.OnClickListener() {

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addnewgoal">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_bold"
+        android:text="Add a New Goal!"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Great job adding new goals! One step at a time!"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_bold"
+        android:text="Here is a list of suggested goals you can achieve based on your history:"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_bold"
+        android:text="General Goals"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/checkBox8"
+            android:layout_width="348dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/lato_bold"
+            android:text="Take dog to the park"
+            android:textSize="12sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_bold"
+        android:text="Make a new friend"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_bold"
+        android:text="Invite neighbors over for dinner"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_bold"
+        android:text="Physical Activity Goals"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_bold"
+        android:text="Get a gym membership"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_bold"
+        android:text="Explore the downtown area"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_bold"
+        android:text="Take in a sporting event and invite at least 5 friends "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_bold"
+        android:text="Relaxation Goals"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_bold"
+        android:text="Visit Grandma and Grandpa"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_bold"
+        android:text="Meditate more frequently (at least 10 times a week for a month)"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato_bold"
+        android:text="Practice breathing exercises"
+        android:textSize="12sp" />
+
+</LinearLayout>
