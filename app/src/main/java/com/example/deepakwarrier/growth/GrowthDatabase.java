@@ -1,27 +1,43 @@
 package com.example.deepakwarrier.growth;
 
+import java.io.File;
+
 public class GrowthDatabase {
 
-    private String saveFilePath = "testfile.sav";
+    private String saveFilePath;
+    private File saveFile;
 
-    private int activityPoints = 10;
+    private int activityPoints;
 
 
     // constructor
     public GrowthDatabase(String filepath){
         saveFilePath = filepath;
+        saveFile = new File(saveFilePath);
 
-        load(saveFilePath);
+        load();
     }
 
     // load from save file
-    public void load(String filepath){
+    public void load(){
 
+        // if there already is a save file, load
+        if(saveFile.exists() && !saveFile.isDirectory()) {
+            //TODO load
+        }else{ // otherwise, create a default save
+            createDefaultStartState();
+            save();
+        }
     }
 
     // save to file
-    public void save(String filepath){
+    public void save(){
+        //TODO save
+    }
 
+    // create a default starter state
+    private void createDefaultStartState(){
+        activityPoints = 10;
     }
 
     // returns safeFilePath
