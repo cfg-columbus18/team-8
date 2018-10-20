@@ -104,7 +104,7 @@ public class GrowthDatabase {
         try {
             jsonObject = new JSONObject("\n" +
                     "{\n" +
-                    "    \"activityPoints\": 10\n" +
+                    "    \"activityPoints\": 1\n" +
                     "}");
         } catch (JSONException e) {
             Log.d("DB", "JSONException");
@@ -114,13 +114,42 @@ public class GrowthDatabase {
         save();
     }
 
+    // increase the activity points
+    public void increaseActivityPoints(int amount){
+        Log.d("DB", "Increasing ActivityPoints");
+
+        try {
+            jsonObject.put("activityPoints", getCurrentActivityPoints() + amount);
+        } catch (JSONException e) {
+            Log.d("DB", "JSONException");
+            e.printStackTrace();
+        }
+
+        save();
+    }
+
+    // returns current activity points
+    public int getCurrentActivityPoints(){
+        Log.d("DB", "Getting activityPoints");
+
+        int result = -1;
+        try {
+            result = jsonObject.getInt("activityPoints");
+        } catch (JSONException e) {
+            Log.d("DB", "JSONException");
+            e.printStackTrace();
+        }
+
+        return result;
+    }
+
     // returns current state of forest growth
     public int getCurrentForestGrowth(){
         Log.d("DB", "Getting forest growth");
 
         int result = -1;
         try {
-            result = jsonObject.getInt("activityPoints") / 2;
+            result = jsonObject.getInt("activityPoints"); //TODO do more math for this, but for now it's just the base values
         } catch (JSONException e) {
             Log.d("DB", "JSONException");
             e.printStackTrace();
